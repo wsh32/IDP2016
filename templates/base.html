@@ -2,7 +2,7 @@
 <html lang="en">
 	{% load staticfiles %}
 	<head>
-		<title>{% block title %}{% endblock %} | The Igloo</title>
+		<title>{% block title %}{% endblock %} | Zero Industries</title>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -13,13 +13,14 @@
 		<!-- CSS  -->
 		<link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}" />
 		<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/palette.css' %}" />
 		<link rel="stylesheet" href="{% static 'css/mdi.css' %}" />
 		{% block css %}{% endblock %}
 	</head>
 
 	<body>
 		<header>
-			<nav class="blue" role="navigation">
+			<nav class="dark-primary" role="navigation">
 				<div class="container">
 					<div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo hide-on-med-and-down">Zero Industries</a>
 						<ul class="right hide-on-med-and-down">
@@ -47,7 +48,7 @@
 
 		{% block main %}{% endblock %}
 
-		<footer class="grey darken-2 page-footer">
+		<footer class="dark-primary page-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col m6 s12">
