@@ -3,13 +3,18 @@
 
 {% block title %}Home{% endblock %}
 
+{% block css %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock %}
+
 {% block main %}
 		<main>
 			<div class="no-pad-bot section" id="index-banner">
 				<div class="container">
 					<h1 class="header center primary-text">Zero Industries</h1>
-					<div class="row center">
-						<h5 class="light">Welcome to Zero Industries!</h5>
+					<div class="row">
+						<h5 class="center accent-text"><span class="typed"></span></h5>
+						<h5 class="array center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
 					</div>
 				</div>
 			</div>
@@ -18,9 +23,9 @@
 				<div class="section">
 					<div class="row">
 						<div class="col s12 m6 center">
-							<i class="material-icons medium accent-text">vpn_key</i>
-							<h5 class="header center light">blah blah</h5>
-							<p>blah blah blah</b></p>
+							<i class="material-icons medium accent-text">star</i>
+							<h5 class="header center light">Fun for the whole family!</h5>
+							<p>With attractions ranging from the "Tire Pots" to "Blast Off", every member of the family will be well entertained!</b></p>
 						</div>
 						<div class="col s12 m6 center">
 							<i class="material-icons medium accent-text">star</i>
@@ -31,4 +36,9 @@
 				</div>
 			</div>
 		</main>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/typed.js' %}"></script>
+<script src="{% static 'js/home.js' %}"></script>
 {% endblock %}

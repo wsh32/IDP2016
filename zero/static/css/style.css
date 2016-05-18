@@ -38,15 +38,3 @@ ul.side-nav li.logo:hover {
 	height: 100%;
 	pointer-events: none;
 }
-
-#events li:before {
-	content: "> ";
-	color: #536dfe;
-	font-weight: bold;
-}
-
-#events li:after {
-	content: " <";
-	color: #536dfe;
-	font-weight: bold;
-}
