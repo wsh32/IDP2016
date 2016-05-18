@@ -8,11 +8,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
 		<!-- All the icons -->
-		<link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="{% static 'img/favicon-192x192.png' %}" sizes="192x192">
+		<link rel="icon" type="image/png" href="{% static 'img/favicon-160x160.png' %}" sizes="160x160">
+		<link rel="icon" type="image/png" href="{% static 'img/favicon-96x96.png' %}" sizes="96x96">
+		<link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
+		<link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16">
 
 
 		<!-- CSS  -->
@@ -34,16 +34,9 @@
 
 						<ul id="nav-mobile" class="side-nav">
 							<li class="logo center"><a id="logo-container" href="/" class="brand-logo">
-								<object id="front-page-logo" type="image/png" data="{% static 'img/favicon.png' %}"></object></a></li>
+								<object id="front-page-logo" type="image/png" data="{% static 'img/logo.png' %}"></object></a></li>
 							<div class="divider"></div>
 							<li><a href="/">Home</a></li>
-							{% if "userid" in request.session %}
-							<li><a href="/submit">Submit</a></li>
-							<li><a href="/account">Account</a></li>
-							{% else %}
-							<li><a href="/login">Log in</a></li>
-							<li><a href="/register">Register</a></li>
-							{% endif %}
 						</ul>
 						<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 					</div>
@@ -95,7 +88,7 @@
 
 		</footer>
 
-		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
 		<script src="{% static 'js/materialize.min.js' %}"></script>
 		<script src="{% static 'js/init.js' %}"></script>
 		{% block js %}{% endblock %}
