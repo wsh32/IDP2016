@@ -4,7 +4,7 @@ def home(request):
 	return render(request, 'home.html')
 
 def attractions(request):
-	return render(request, 'home.html')
+	return render(request, 'attractions.html')
 
 def visit(request):
 	return render(request, 'visit.html')
