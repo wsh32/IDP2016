@@ -3,7 +3,7 @@ $(document).ready(function() {
 		strings: ["Experience: "],
 		typeSpeed: 50,
 		callback: function() {
-			scramble(['Transportation', 'Zero Gravity', 'Space Exploration', 'The Hyperloop', 'Jet Packs'])
+			scramble(['Blast Off', 'Pit Stop', 'Hot Tires', 'Super Track', 'Infinite Loop', 'Crazy Copter', 'Jetpack Jolts', 'Viking Ship'])
 		}
 	});
 });
