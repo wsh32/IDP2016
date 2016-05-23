@@ -16,4 +16,4 @@ def faq(request):
 	return render(request, 'faq.html')
 
 def resources(request):
-	return render(request, 'home.html')
+	return render(request, 'resources.html')
